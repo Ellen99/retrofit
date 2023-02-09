@@ -40,5 +40,4 @@ jobs:
         java-version: 8
         
     - name: debug Test w nondex
-      - run: mvn -pl retrofit nondex:nondex -Dtest="retrofit2.CompletableFutureAndroidTest#completableFutureApi24"
-      - run: mvn -pl retrofit nondex:debug -Dtest="retrofit2.CompletableFutureAndroidTest#completableFutureApi24"
+      run: mvn -pl retrofit nondex:debug -Dtest="retrofit2.CompletableFutureAndroidTest"

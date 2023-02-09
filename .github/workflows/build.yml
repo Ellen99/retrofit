@@ -28,16 +28,3 @@ jobs:
         
     - name: Run Test w nondex
       run: mvn -pl retrofit nondex:nondex -Dtest="retrofit2.CompletableFutureAndroidTest#completableFutureApi24"
-      
-  debug_test_with_nondex:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-java@v3
-      with:
-        distribution: 'zulu'
-        java-version: 8
-        
-    - name: debug Test w nondex
-      run: mvn -pl retrofit nondex:debug -Dtest="retrofit2.CompletableFutureAndroidTest"
